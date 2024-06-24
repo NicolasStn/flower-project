@@ -1,0 +1,197 @@
+.loginCard {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 2vh;
+}
+
+.loginCardTitle {
+    color: rgb(0, 76, 0);
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.loginCard form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginCardLabelMail {
+    margin-top: 5vh;
+}
+
+.loginCardLabel {
+    margin-top: 3vh;
+}
+
+.loginCardInputMail {
+    outline: none;
+    margin-top: 1vh;
+    padding: 14px 16px;
+    border: 1px solid black;
+}
+
+.loginCardInput {
+    outline: none;
+    margin-top: 1vh;
+    padding: 14px 16px;
+    border: 1px solid black;
+}
+
+.loginCardInputPassword {
+    outline: none;
+    margin-top: 1vh;
+    padding: 14px 16px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.loginCardInput:focus {
+    outline: none;
+}
+
+.loginCardInputMail:focus {
+    outline: none;
+}
+
+.loginCardCreate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.loginCardPassword {
+    color: black;
+    margin-top: 2vh;
+}
+
+.loginCardSubmit {
+    margin: 5vh 0 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.loginCardSubmit:hover {
+    cursor: pointer;
+}
+
+.loginCardSeparate {
+    border-bottom: #e8d2a6 2px solid;
+    margin: 5vh 0;
+    width: 100%;
+}
+
+.loginCardBtn {
+    width: 95%;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: rgb(0, 76, 0) 1px solid;
+    margin-bottom: 10vh;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.loginCardBtn:hover {
+    cursor: pointer;
+}
+
+.resetCardBtn {
+    width: 95%;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: rgb(0, 76, 0) 1px solid;
+    margin-bottom: 10vh;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.resetCardBtn:hover {
+    cursor: pointer;
+}
+
+.showPasswordLogin {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-top: 1vh;
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+}
+
+.hidePasswordLogin {
+    width: 20px;
+    height: 20px;
+    display: none;
+    margin-top: 1vh;
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+}
+
+.passwordEyesContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+.confirmPasswordEyesContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+.confirmPassword {
+    width: 40%;
+    height: auto;
+    padding: 20vh 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.confirmPasswordContent {
+    text-align: center;
+    font-size: 20px;
+    padding: 10vh 20px;
+    border: rgb(0, 76, 0) 1px solid;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .loginCard {
+        width: 90%;
+    }
+
+    .loginCardBtn {
+        width: 90%;
+        margin-bottom: 5vh;
+    }
+
+    .resetCardBtn {
+        width: 90%;
+        margin-bottom: 5vh;
+    }
+
+    .confirmPassword {
+        width: 80%;
+    }
+
+}

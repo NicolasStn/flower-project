@@ -1,0 +1,475 @@
+.mainClients {
+    margin-bottom: 10vh;
+}
+
+.cardClientsAdd {
+    width: 40%;
+    height: 40vh;
+    border: 2px solid rgb(0, 76, 0);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}
+
+.cardClientsAdd form {
+    width: 90%;
+}
+
+.cardClientsAddSubmit {
+    width: 100%;
+    margin: 5vh 0;
+    border-radius: 5px;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: rgb(0, 76, 0) 1px solid;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.cardClientsAddSubmit:hover {
+    cursor: pointer;
+}
+
+.cardClientsAdd button {
+    text-decoration: none;
+    font-size: 8rem;
+    font-weight: 200;
+    color: #ebd09b;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    border: none;
+}
+
+.cardClientsAdd button:hover {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+    color: rgb(0, 76, 0);
+    cursor: pointer;
+}
+
+.cardClientsTrash {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.cardClientsEdit {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.cardClientsCommands {
+    width: 60%;
+    height: auto;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    position: relative;
+    padding: 5vh 0;
+}
+
+.deleteClientFirstForm {
+    display: block;
+}
+
+.deleteClientFinalForm {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.editPasswordContainer {
+    display: none;
+    width: 95%;
+}
+
+.editPasswordContainer form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.editPasswordContainer form input {
+    width: 50%;
+}
+
+.allClientsEdit {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cardClientFormContainer {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+}
+
+.cardClientFormContainerContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.mainClientsCommande {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: rgb(0, 76, 0) 1px solid;
+    margin: 0 0 5vh;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.mainClientsCommande:hover {
+    cursor: pointer;
+}
+
+.mainClientCardInputGender {
+    margin-top: 5vh;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.mainClientCardInputGender:focus {
+    outline: none;
+}
+
+.mainAddTitle {
+    text-align: center;
+    margin: 5vh 0;
+    width: 100%;
+    color: rgb(0, 76, 0);
+}
+
+.cardClientsContent {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15vh auto;
+}
+
+.cardClientsContainerLeft {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.cardClientsTitle {
+    color: rgb(0, 76, 0);
+    margin-bottom: 5vh;
+}
+
+.cardClientsContainerRight {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    border: 2px solid rgb(0, 76, 0);
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.cardClientsContainerRight button {
+    width: 50%;
+}
+
+.cardClientsContainerRight button:hover {
+    cursor: pointer;
+}
+
+.cardClientContainerRightEdit {
+    width: 75%;
+    height: auto;
+    border: 2px solid rgb(0, 76, 0);
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    margin-bottom: 5vh;
+    position: relative;
+    gap: 5px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cardClientContainerRightSaveEdit {
+    margin: 5vh 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: rgb(0, 76, 0) 1px solid;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.cardClientContainerRightSaveEdit:hover {
+    cursor: pointer;
+}
+
+.cardClientsContainerLeftBtn {
+    width: 100%;
+    padding: 40px 16px;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    background: linear-gradient(to left, transparent 50%, rgb(0, 76, 0) 50%) right;
+    background-size: 200% 100%;
+    transition: .4s ease-out;
+}
+
+.cardClientsContainerLeftBtn:hover {
+    cursor: pointer;
+    background-position: left;
+    color: white;
+}
+
+.cardClientsContainerRightDelete {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    margin: 15vh auto 0;
+}
+
+.mainClientsTitle {
+    text-align: center;
+    margin: 20vh auto 10vh;
+    color: rgb(0, 76, 0);
+}
+
+.loginCardClientBtn {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: rgb(0, 76, 0) 1px solid;
+    margin-bottom: 10vh;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.cardClientContainerRightTitle {
+    margin: 10vh 0 10vh;
+    align-self: baseline;
+    padding-left: 50px;
+}
+
+.seeClientsCommandeContainer {
+    width: 60%;
+    height: auto;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    padding: 5vh 0;
+}
+
+.seeClientsCommandeContainerCenter {
+    width: auto;
+    margin: auto;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.deleteCommandeForm {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.deleteCommandeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.deleteCommandeFirstForm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.commandeCardSubmit {
+    margin: 5vh 0 0;
+    border-radius: 5px;
+    width: 50%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.commandeCardSubmit:hover {
+    cursor: pointer;
+}
+
+.commandeCardInput {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.deleteCommandeCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 5vh auto;
+}
+
+.deleteCommandeCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.deleteCommandeCardContentTitle {
+    color: rgb(0, 76, 0);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.deleteCommandeCardContentTotal {
+    margin: 5vh 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+
+    .cardClientFormContainer {
+        width: 40%;
+    }
+
+    .cardClientFormContainerContent {
+        flex-direction: column;
+    }
+
+    .cardClientFormContainer {
+        width: 100%;
+    }
+
+    .cardClientsAdd {
+        width: 100%;
+    }
+
+    .cardClientsContent {
+        flex-direction: column;
+        margin: 20vh auto 0;
+    }
+
+    .cardClientsContainerLeft {
+        width: 100%;
+    }
+
+    .cardClientsTitle {
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    .cardClientsContainerLeftBtn {
+        padding: 20px 16px;
+    }
+
+    .cardClientsContainerRight {
+        width: 100%;
+        border: none;
+    }
+
+    .cardClientsContainerRightDelete {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .cardClientContainerRightTitle {
+        margin: 5vh 0 0;
+        padding-left: 0;
+        align-self: center;
+        text-align: center;
+    }
+
+    .cardClientsContainerRight button {
+        width: 100%;
+    }
+
+    .cardClientContainerRightEdit {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    .editPasswordContainer form input {
+        width: 100%;
+    }
+
+    .editPasswordContainer {
+        width: 100%;
+    }
+
+    .seeClientsCommandeContainer {
+        border: none;
+        width: 100%;
+    }
+
+    .deleteCommandeCardContainer {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .deleteCommandeCardContent {
+        align-items: center;
+    }
+
+    .commandeCardSubmit {
+        width: 80%;
+    }
+
+    .deleteCommandeForm {
+        width: 80%;
+    }
+
+}

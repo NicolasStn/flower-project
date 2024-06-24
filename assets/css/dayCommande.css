@@ -1,0 +1,143 @@
+.dayCommandeContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10vh auto;
+    width: 80%;
+    height: auto;
+}
+
+.dayCommandeCardContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.dayCommandeCardContainerArticles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.dayCommandeCardPosition {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dayCommandeCardImg {
+    width: 100px;
+    height: 100px;
+}
+
+.mainDayCommandeContainer {
+    width: 60%;
+    height: auto;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10vh;
+    position: relative;
+    padding: 5vh 0;
+}
+
+.dayCommandeCardForm {
+    width: 45%;
+    margin: 5vh auto;
+}
+
+.dayCommandeCardFleur {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 76, 0);
+}
+
+.dayCommandeCardContent {
+    font-size: 20px;
+    text-align: center;
+}
+
+.dayCommandeCardPrice {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dayCommandeCardTotal {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.dayBtnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.dayCommandeBtnAccept {
+    border-radius: 5px;
+    width: 100%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: rgb(0, 76, 0) 1px solid;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.dayCommandeBtnAccept:hover {
+    cursor: pointer;
+}
+
+.dayCommandeBtnDelete {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: rgb(0, 76, 0) 1px solid;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.dayCommandeBtnDelete:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+
+    .dayCommandeContainer {
+        width: 80%;
+        margin-bottom: 5vh;
+    }
+
+    .mainDayCommandeContainer {
+        border: none;
+        width: 100%;
+        margin: 5vh auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .dayCommandeCardFleur {
+        font-size: 25px;
+    }
+
+    .dayCommandeCardImg {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .dayCommandeCardContent {
+        margin-top: 2vh;
+    }
+
+}

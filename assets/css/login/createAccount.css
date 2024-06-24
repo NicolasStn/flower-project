@@ -1,0 +1,259 @@
+.createAccountTitle {
+    color: rgb(0, 76, 0);
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.resetPasswordTitle {
+    color: rgb(0, 76, 0);
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.createAccountCard {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 2vh;
+}
+
+.createAccountCard form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    column-gap: 50px;
+}
+
+.createAccountCardInputGender {
+    margin-top: 1vh;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.createAccountCardInputGender:focus {
+    outline: none;
+}
+
+.createAccountCardInput {
+    outline: none;
+    margin-top: 1vh;
+    padding: 12px 16px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.createAccountCardInput:focus {
+    outline: none;
+}
+
+.createAccountCardInputNom {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 2vh;
+}
+
+.createAccountCardInputPrenom {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 2vh;
+}
+
+.createAccountCardInputUsername {
+    grid-column: 3;
+    grid-row: 2;
+    margin-top: 2vh;
+}
+
+.createAccountCardInputEmail {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 2vh;
+}
+
+.createAccountCardInputTelephone {
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 2vh;
+}
+
+.createAccountCardInputAdresse {
+    grid-column: 1;
+    grid-row: 4;
+    margin-top: 2vh;
+}
+
+.createAccountCardInputCP {
+    grid-column: 2;
+    grid-row: 4;
+    margin-top: 2vh;
+}
+
+.createAccountCardInputVille {
+    grid-column: 3;
+    grid-row: 4;
+    margin-top: 2vh;
+}
+
+.createPasswordEyesContainer {
+    grid-column: 1;
+    grid-row: 5;
+    margin-top: 2vh;
+    position: relative;
+    align-items: center;
+}
+
+.createConfirmPasswordEyesContainer {
+    grid-column: 2;
+    grid-row: 5;
+    margin-top: 2vh;
+    position: relative;
+    align-items: center;
+}
+
+.createShowPasswordLogin {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-top: 4vh;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: transparent;
+}
+
+.createHidePasswordLogin {
+    width: 20px;
+    height: 20px;
+    display: none;
+    margin-top: 4vh;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: transparent;
+}
+
+.createAccountCardCheckbox {
+    margin-top: 1vh;
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 6;
+    margin-top: 2vh;
+    display: flex;
+    gap: 10px;
+}
+
+.createAccountCardCheckbox:focus {
+    outline: none;
+}
+
+.createAccountCardCheckbox input {
+    width: 25px;
+    height: 25px;
+}
+
+.createAccountContent {
+    color: rgb(181, 181, 181);
+    grid-column: 1;
+    grid-row: 7;
+    margin-top: 2vh;
+}
+
+.createAccountCardSubmit {
+    margin: 2vh 0 15vh;
+    border-radius: 5px;
+    width: 100%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: none;
+    color: white;
+    font-weight: 600;
+    grid-column: 1 / 4;
+    grid-row: 8;
+}
+
+.createAccountCardSubmit:hover {
+    cursor: pointer;
+}
+
+.usernameUsed {
+    font-size: 20px;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+.error {
+    display: none;
+}
+
+.success {
+    display: none;
+}
+
+.honeyPot {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1279px) {
+
+    .createPasswordEyesContainer {
+      grid-column: 1 / 3;
+    }
+
+    .createConfirmPasswordEyesContainer {
+      grid-column: 1 / 3;
+      grid-row: 6;
+    }
+
+    .createShowPasswordLogin {
+        margin-top: 3.5vh;
+    }
+
+    .createHidePasswordLogin {
+        margin-top: 3.5vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .createAccountTitle {
+        margin-top: 5vh;
+    }
+
+    .createAccountCard {
+        width: 90%;
+    }
+
+    .createAccountCard form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .createAccountCardSubmit {
+        margin-bottom: 5vh;
+    }
+
+    .resetPasswordTitle {
+        margin-top: 5vh;
+    }
+
+    .createAccountCardInput {
+        box-sizing: border-box;
+    }
+
+    .createShowPasswordLogin {
+        margin-top: 4.3vh;
+        left: 90%;
+    }
+
+    .createHidePasswordLogin {
+        margin-top: 4.3vh;
+        left: 90%;
+    }
+
+}

@@ -1,0 +1,61 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('index/index.css');
+@import url('fleurs/fleurs.css');
+@import url('clients/clients.css');
+@import url('fournisseurs/fournisseurs.css');
+@import url('login/login.css');
+@import url('login/createAccount.css');
+@import url('cart/cart.css');
+@import url('cookies.css');
+@import url('search.css');
+@import url('dayCommande.css');
+@import url('mentions.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f4edde;
+}
+
+body {
+    margin-top: 12vh;
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #ebd09b #f4edde; /* scroll thumb and track */
+}
+
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f4edde; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ebd09b; /* color of the scroll thumb */
+    border-radius: 16px; /* roundness of the scroll thumb */
+    border: 3px solid #f4edde; /* creates padding around scroll thumb */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Remove arrows from type number */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

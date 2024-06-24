@@ -1,0 +1,33 @@
+.cardFleursEdit {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+.cardFleursEditRupture {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}
+
+.editFleurImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+
+    .cardFleursEdit {
+            background-color: transparent;
+
+    }
+
+}

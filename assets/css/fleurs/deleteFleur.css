@@ -1,0 +1,109 @@
+.cardFleursTrash {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+}
+
+.cardFleursTrashRupture {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+}
+    
+.cardClientsEdit {
+        width: 40px;
+        height: 40px;
+}
+
+.deleteFleur {
+        width: 60%;
+        margin: 10vh auto;
+}
+
+.deleteFleurTitle {
+        text-align: center;
+        color: rgb(0, 76, 0);
+}
+
+.deleteFleurContainer {
+        display: flex;
+        justify-content: space-around;
+        margin: 10vh auto;
+        width: 60%;
+}
+
+.deleteFleurContainerContent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+}
+
+.deleteFleurContent {
+        font-size: 22px;
+}
+
+.deleteFleurSubmit {
+        margin: 5vh 0 0;
+        border-radius: 5px;
+        width: 60%;
+        padding: 14px 16px;
+        align-self: center;
+        background-color: rgb(0, 76, 0);
+        border: none;
+        color: white;
+        font-weight: 600;
+}
+    
+.deleteFleurSubmit:hover {
+        cursor: pointer;
+}
+
+.deleteFleurForm {
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+
+@media screen and (max-width: 700px) {
+
+        .cardFleursTrash {
+                background-color: transparent;
+        }
+
+        .deleteFleurTitle {
+                margin-top: 15vh;
+        }
+
+        .deleteFleurContainer {
+                flex-direction: column-reverse;
+                width: 100%;
+                align-items: center;
+                margin-bottom: 0;
+        }
+
+        .deleteFleurContainerContent {
+                margin-top: 5vh;
+        }
+
+        .deleteFleur {
+                width: 80%;
+        }
+
+        .deleteFleurSubmit {
+                width: 100%;
+        }
+
+        .deleteFleurForm {
+                width: 100%;
+        }
+
+}

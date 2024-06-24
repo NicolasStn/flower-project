@@ -1,0 +1,258 @@
+.searchCart {
+    width: 50%;
+    height: auto;
+    border: 2px solid rgb(0, 76, 0);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 20vh auto 10vh;
+    gap: 10px;
+    flex-direction: column;
+    padding: 5vh 0;
+    text-align: center;
+}
+
+.searchCart P {
+    font-size: 20px;
+}
+
+.commandeCart {
+    width: 50%;
+    height: auto;
+    border: 2px solid rgb(0, 76, 0);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 10vh;
+    gap: 10px;
+    flex-direction: column;
+    padding: 5vh 0;
+    text-align: center;
+}
+
+.mainConfirmationTitle {
+    text-align: center;
+    margin: 10vh auto 10vh;
+    color: rgb(0, 76, 0);
+}
+
+.commandeCart P {
+    font-size: 20px;
+}
+
+.cartCardContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.maincartContainer {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 5vh 0;
+}
+
+.cartCardImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cartForm {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto;
+}
+
+.cartFormContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cartFormInput {
+    margin: 5vh 0 0;
+    border-radius: 5px;
+    width: 50%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.cartFormInput:hover {
+    cursor: pointer;
+}
+
+.cartFormDate {
+    background-color: transparent;
+    width: 40%;
+    padding: 15px;
+    color: rgb(0, 76, 0);
+    font-size: 18px;
+    border: rgb(0, 76, 0) 1px solid;
+    border-right: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.cartFormHours {
+    border: rgb(0, 76, 0) 1px solid;
+    border-left: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-right: 5px;
+}
+
+.cartFormHours:hover {
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: rgb(0, 76, 0) 1px solid;
+}
+
+.cartFormQuantity {
+    outline: none;
+    font-size: 20px;
+    border: none;
+}
+
+.cartFormQuantity:hover {
+    cursor: pointer;
+}
+
+.cartDeleteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8vh;
+}
+
+.cartDeleteBtn {
+    padding: 14px 16px;
+    border: 5px;
+    outline: none;
+    border: rgb(0, 76, 0) 1px solid;
+    border-radius: 5px;
+}
+
+.cartDeleteBtn:hover {
+    cursor: pointer;
+}
+
+.cartCardContainerArticles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 5vh;
+}
+
+.cartCommandeCardContent {
+    font-size: 20px;
+    text-align: center;
+}
+
+.cartCommandeCardContentMobile {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cartFleurLink {
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 700px) {
+
+    .searchCart {
+        width: 90%;
+    }
+
+    .maincartContainer {
+        border: none;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .dayCommandeCardContainerArticles {
+        flex-direction: column;
+    }
+
+    .dayCommandeCardPosition {
+        flex-direction: column-reverse;
+    }
+
+    .dayCommandeCardContainerArticles {
+        width: 100%;
+    }
+
+    .cartForm {
+        width: 80%;
+        margin: 5vh auto;
+    }
+
+    .cartFormInput {
+        width: 100%;
+    }
+
+    .cartFormDate {
+        width: 80%;
+    }
+
+    .cartCardContainerArticles {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cartCommandeCardContent {
+        display: none;
+    }
+
+    .cartCommandeCardContentMobile {
+        display: block;
+    }
+
+    .cartFormUpdateQuantity {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 5vh;
+    }
+
+    .cartDeleteContainer {
+        margin-top: 0;
+    }
+
+    .commandeCart {
+        margin-top: 0;
+        width: 80%;
+    }
+
+    .mainConfirmationTitle {
+        margin-top: 20vh;
+    }
+
+}

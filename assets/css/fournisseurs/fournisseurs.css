@@ -1,0 +1,200 @@
+.mainFournisseursTitle {
+    text-align: center;
+    margin: 5vh 0;
+    width: 100%;
+}
+
+.mainFournisseurs {
+    width: 90%;
+    display: flex;
+    margin: 10vh auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cardFournisseursAdd {
+    width: 40%;
+    height: 40vh;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cardFournisseursAdd a {
+    text-decoration: none;
+    font-size: 10rem;
+    color: lightgrey;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+
+.cardFournisseursAdd a:hover {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+    color: rebeccapurple;
+}
+
+.cardFournisseurs {
+    width: 40%;
+    height: auto;
+    border: 2px solid rgb(0, 76, 0);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    position: relative;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.mainFournisseursVariete {
+    margin-top: 15vh;
+}
+
+.mainFournisseursTelephone {
+    margin-bottom: 5vh;
+}
+
+.mainFournisseursTelephoneClient {
+    margin-bottom: 15vh;
+}
+
+.mainFournisseursContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.mainFournisseursContent {
+    margin-top: 5vh;
+    line-height: 30px;
+    text-align: center;
+}
+
+.mainFournisseursEdit {
+    margin: 5vh 0;
+    border-radius: 5px;
+    width: 40%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: rgb(0, 76, 0) 1px solid;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.mainFournisseursEdit:hover {
+    cursor: pointer;
+}
+
+.mainFournisseursDelete {
+    width: 40%;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: rgb(0, 76, 0) 1px solid;
+    margin: 5vh 0;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.mainFournisseursDelete:hover {
+    cursor: pointer;
+}
+
+.cardFournisseurs form {
+    width: 90%;
+}
+
+.cardFournisseurContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.cardFournisseurFormContainer {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+}
+
+.cardFournisseurInput {
+    outline: none;
+    margin-top: 1vh;
+    padding: 14px 16px;
+    border: 1px solid black;
+}
+
+.cardFournisseurLabel {
+    margin-top: 2vh;
+}
+
+.cardFournisseurAdmin {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainFournisseursDeleteConfirmation {
+    margin: 5vh 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: rgb(0, 76, 0) 1px solid;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.mainFournisseursDeleteConfirmation:hover {
+    cursor: pointer;
+}
+
+.cardFournisseurInputPasswordDelete {
+    outline: none;
+    margin-top: 1vh;
+    padding: 14px 16px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 700px) {
+
+    .mainFournisseurs {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .cardFournisseurs {
+        width: 100%;
+    }
+
+    .mainFournisseursVariete {
+        margin-top: 10vh;
+    }
+    
+    .mainFournisseursTelephone {
+        margin-bottom: 10vh;
+    }
+
+    .mainFournisseursTelephoneClient {
+        margin-bottom: 10vh;
+    }
+
+    .mainFournisseursContainer {
+        width: 80%;
+    }
+
+    .cardFournisseurFormContainer {
+        width: 100%;
+    }
+
+}

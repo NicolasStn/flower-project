@@ -1,0 +1,379 @@
+@import url('seeFleur.css');
+@import url('deleteFleur.css');
+@import url('editFleur.css');
+
+.mainFleursContainer {
+    width: 70%;
+    margin: auto;
+}
+
+.mainFleursSecondTitle {
+    color: rgb(0, 76, 0);
+}
+
+.mainFleursContent {
+    margin-top: 5vh;
+    line-height: 30px;
+}
+
+.mainFleurs {
+    width: 80%;
+    display: flex;
+    margin: 0 auto 10vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cardFleursAdd {
+    width: 40%;
+    height: 30vh;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.cardFleursAdd a {
+    text-decoration: none;
+    font-size: 10rem;
+    color: lightgrey;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    background-color: whitesmoke;
+}
+
+.cardFleursAdd a:hover {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+    color: rebeccapurple;
+}
+
+.cardFleurs {
+    width: 20%;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    background-color: white;
+}
+
+.cardFleursRupture {
+    width: 100%;
+    position: absolute;
+    height: 30vh;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+}
+
+.cardFleursRuptureParagraph {
+    background-color: transparent !important;
+    font-size: 150%;
+}
+
+.cardFleursLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    background-color: white;
+}
+
+.cardFleurs:hover {
+    cursor: pointer;
+}
+.cardFleursImg {
+    width: 100%;
+    height: 30vh;
+    transition-duration: 0.4s;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.cardFleursImgShape {
+    overflow: hidden;
+    width: 100%;
+    height: 30vh;
+}
+
+.cardFleursImgShapeIndex {
+    overflow: hidden;
+    width: 100%;
+    height: 30vh;
+}
+
+.cardFleurs:hover .cardFleursImg {
+    transform: scale(1.15);
+    transition-duration: 0.4s;
+}
+
+.cardFleurs:hover .cardFleursRupture {
+    transform: scale(1.15);
+    transition-duration: 0.4s;
+}
+
+.cardFleurs p {
+    margin-top: 3vh;
+    background-color: white;
+}
+
+.mainFleursVarieteCouleur {
+    font-size: 16px;
+    background-color: white;
+}
+
+.mainFleursPrix {
+    font-size: 22px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.mainFleursStock {
+    font-size: 1rem;
+    background-color: white;
+    margin-bottom: 1vh;
+}
+
+.fleursForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 10vh 0 5vh;
+}
+
+.planningFormTri {
+    padding: 14px 16px;
+    background-color: transparent;
+    border: rgb(0, 76, 0) 1px solid;
+    margin-bottom: 10vh;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.planningFormTri:hover {
+    cursor: pointer;
+}
+
+.planningFormSubmit {
+    display: none;
+}
+
+.cardFleursAddBtn {
+    text-decoration: none;
+    font-size: 8rem;
+    font-weight: 200;
+    color: #ebd09b;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    border: none;
+}
+
+.cardFleursAddBtn:hover {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+    color: rgb(0, 76, 0);
+    cursor: pointer;
+}
+
+.addFleurContainerRight {
+    width: 75%;
+    height: auto;
+    display: flex;
+    border: 2px solid rgb(0, 76, 0);
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 5vh;
+    position: relative;
+    gap: 5px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.addFleurContainerRight form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.addFleurContainerRightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.addFleurInputImg::file-selector-button {
+    outline: none;
+    margin-top: 1vh;
+    padding: 14px 16px;
+    border: 1px solid black;
+    width: 100%;
+    background-color: transparent;
+    color: blue;
+}
+
+.addFleurInputImg::file-selector-button:hover {
+    cursor: pointer;
+}
+
+.addFleurContainerRightSaveEdit {
+    margin: 5vh 0;
+    border-radius: 5px;
+    width: 50%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: rgb(0, 76, 0) 1px solid;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.addFleurContainerRightSaveEdit:hover {
+    cursor: pointer;
+}
+
+.addFleurContainerRightEdit {
+    width: 75%;
+    height: auto;
+    border: 2px solid rgb(0, 76, 0);
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    margin-bottom: 5vh;
+    position: relative;
+    gap: 5px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.addFleurContainerRightEditFlex {
+    display: flex;
+}
+
+.addFleurContainerRightEditFlex form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.addFleurContainerRightContainerEdit {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+@media screen and (max-width: 700px) {
+
+    .cardFleursImgShape {
+        overflow: hidden;
+        width: 100%;
+        height: 25vh;
+    }
+
+    .cardFleursImgShapeIndex {
+        overflow: hidden;
+        width: 100%;
+        height: 4vh;
+    }
+
+    .cardFleursImg {
+        overflow: hidden;
+        width: 100%;
+        height: 25vh;
+    }
+
+    .cardFleursLink {
+        background-color: transparent;
+    }
+
+    .cardFleursRupture {
+        height: 25vh;
+    }
+
+    .mainFleursVarieteCouleur {
+        font-size: 16px;
+        background-color: #f4edde;
+        text-align: center;
+    }
+
+    .mainFleursPrix {
+        font-size: 22px;
+        background-color: #f4edde;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .mainFleurs {
+        flex-direction: column;
+        margin: 0 auto 5vh;
+    }
+
+    .cardFleurs {
+        width: 100%;
+    }
+
+    .mainFleursContainer {
+        text-align: center;
+    }
+
+    .fleursForm {
+        margin: 5vh 0 0;
+    }
+
+    .addFleurContainerRight {
+        width: 100%;
+        border: none;
+    }
+
+    .addFleurContainerRight form {
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+
+    .addFleurContainerRightContainer {
+        width: 100%;
+    }
+
+    .addFleurContainerRightSaveEdit {
+        width: 100%;
+    }
+
+    .addFleurContainerRightEdit {
+        border: none;
+        width: 100%;
+    }
+
+    .addFleurContainerRightEditFlex {
+        flex-direction: column;
+    }
+
+}

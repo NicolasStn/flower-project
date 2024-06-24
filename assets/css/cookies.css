@@ -1,0 +1,107 @@
+.cookieContainer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 5vh 0;
+    z-index: 5;
+    overflow: hidden;
+    transition-duration: '0.4s';
+}
+
+.cookieContent {
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.cookieContainerBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    background-color: transparent;
+    margin: auto;
+}
+
+.cookieAccept {
+    margin: 5vh 0 0;
+    border-radius: 5px;
+    width: 40%;
+    padding: 14px 16px;
+    align-self: center;
+    background-color: rgb(0, 76, 0);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.cookieAccept:hover {
+    cursor: pointer;
+}
+
+.cookieDelete {
+    width: 40%;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: rgb(0, 76, 0) 1px solid;
+    margin-bottom: 10vh;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 5vh 0 0;
+}
+
+.cookieDelete:hover {
+    cursor: pointer;
+}
+
+.cookieImg {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    z-index: 6;
+}
+
+.cookieImg:hover {
+    cursor: pointer;
+}
+
+.cookieTitle {
+    background-color: transparent;
+    text-align: center;
+    color: rgb(0, 76, 0);
+    font-size: 25px;
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 700px) {
+
+    .cookieContent {
+        width: 100%;
+    }
+
+    .cookieTitle {
+        text-align: left;
+        width: 90%;
+        margin: auto;
+    }
+
+    .cookieContent {
+        width: 90%;
+        margin: 2vh auto 0;
+        font-size: 15px;
+    }
+
+    .cookieContainerBtn {
+        width: 80%;
+        justify-content: space-around;
+    }
+
+}
